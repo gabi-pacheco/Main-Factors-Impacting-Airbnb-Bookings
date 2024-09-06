@@ -1,6 +1,6 @@
 # Airbnb Host Performance Report
 
-You see the dashboard [here]()
+You see the dashboard [here](air_bnb_analysis/blob/main/Airbnb_I_Host_Performance_Report.pdf)
 
 ## Project Overview
 This project was part of a group mini-project developed during a Data Analytics Bootcamp with **Le Wagon**. The aim was to understand why some Airbnb hosts rent more than others by analyzing host behavior, listing properties, and seasonal trends. The focus was on visualizing the key factors affecting rental performance.
