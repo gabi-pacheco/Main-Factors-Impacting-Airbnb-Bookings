@@ -1,0 +1,15 @@
+SELECT 
+  cal.listing_id
+  , cal.date
+  , EXTRACT(MONTH FROM cal.date) as month
+  , cal.available
+  , IF(cal.available=False, 1, 0) AS is_rented
+  , IF(cal.available=True, 1, 0) AS is_empty
+  , cal.price AS price_per_day
+  , lis.room_type
+  , lis.host_response_time
+  , lis.review_scores_value
+FROM `friendly-beach-412510.airbnb_new.calendar` cal
+LEFT JOIN `friendly-beach-412510.airbnb_new.listing` lis
+ON cal.listing_id=lis.id
+ORDER BY listing_id
